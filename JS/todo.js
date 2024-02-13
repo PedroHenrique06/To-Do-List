@@ -7,11 +7,19 @@ function addElement(){
     let newInputElement = document.createElement("input");
     newInputElement.type = "checkbox";
     newInputElement.addEventListener("click", TaskDone);
-    newListElement.append(newInputElement);
+    newListElement.appendChild(newInputElement);
 
-    let spanText = document.createElement("span");
-    spanText.textContent = document.getElementById("task").value;
-    newListElement.appendChild(spanText);
+    let newSpanElement = document.createElement("span");
+    newSpanElement.textContent = document.getElementById("task").value;
+    newListElement.appendChild(newSpanElement);
+
+    let newButtonElement = document.createElement("button");
+
+    newButtonElement.innerHTML = "X";
+
+    newButtonElement.addEventListener("click", DelElement);
+
+    newListElement.appendChild(newButtonElement);
 
     newListElement.id = "item" + count;
     document.getElementById("main list").appendChild(newListElement);
@@ -33,3 +41,30 @@ function TaskDone(event){
         document.getElementById(parentId).style.textDecoration = "line-through";
     } 
 }
+
+function DelElement(event) {
+
+    let parentId = event.target.parentElement.id;
+
+    document.getElementById(parentId).innerHTML = "";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
