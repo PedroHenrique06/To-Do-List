@@ -2,29 +2,31 @@ let count = 1;
 
 // Cria um novo elemento a partir da entrada e o adiciona a lista
 function addElement(){
-    let newListElement = document.createElement("li");
+    if(document.getElementById("task").value.trim().length > 0) {
+        let newListElement = document.createElement("li");
 
-    let newInputElement = document.createElement("input");
-    newInputElement.type = "checkbox";
-    newInputElement.addEventListener("click", TaskDone);
-    newListElement.appendChild(newInputElement);
+        let newInputElement = document.createElement("input");
+        newInputElement.type = "checkbox";
+        newInputElement.addEventListener("click", TaskDone);
+        newListElement.appendChild(newInputElement);
 
-    let newSpanElement = document.createElement("span");
-    // Realiza a formatação
-    newSpanElement.textContent = document.getElementById("task").value.trim() + " ";
-    newListElement.appendChild(newSpanElement);
+        let newSpanElement = document.createElement("span");
+        // Realiza a formatação
+        newSpanElement.textContent = document.getElementById("task").value.trim() + " ";
+        newListElement.appendChild(newSpanElement);
 
-    let newButtonElement = document.createElement("button");
-    newButtonElement.innerHTML = "X";
-    newButtonElement.addEventListener("click", DelElement);
-    newListElement.appendChild(newButtonElement);
+        let newButtonElement = document.createElement("button");
+        newButtonElement.innerHTML = "X";
+        newButtonElement.addEventListener("click", DelElement);
+        newListElement.appendChild(newButtonElement);
 
-    newListElement.id = "item" + count;
-    newListElement.className = "todo-list";
-    document.getElementById("main list").appendChild(newListElement);
+        newListElement.id = "item" + count;
+        newListElement.className = "todo-list";
+        document.getElementById("main list").appendChild(newListElement);
 
-    document.getElementById("task").value = "";
-    count+=1;
+        document.getElementById("task").value = "";
+        count+=1;
+    }
 }
 
 // Marca a tarefa como concluida
