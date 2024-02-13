@@ -1,5 +1,5 @@
 body {
-    background: #dfdf7c;
+    background: #c9c963;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,6 +23,7 @@ h1, .add-box {
 ul {
     list-style: none;
     padding: 15px;
+    padding-top: 5px;
 }
 
 .todo-list:hover {
