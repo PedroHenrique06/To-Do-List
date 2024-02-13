@@ -1,4 +1,42 @@
+body {
+    background: #dfdf7c;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #dfdf7cb7;
+}
+
+button:hover {
+    background-color: #a1a151fa;
+    font-weight: bold;
+}
+
+h1, .add-box {
+ text-align: center;
+}
+
+.add-box {
+    padding: 10px; 
+}
+
 ul {
     list-style: none;
-    padding: 0;
+    padding: 15px;
+}
+
+.todo-list:hover {
+    font-size: 18px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: #fdfd96;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
 }
