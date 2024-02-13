@@ -10,15 +10,11 @@
     <div class="main">
         <h1>To-Do List</h1>
 
-        <label for="task">Tarefa:</label>
-        <input type="text" name="task" id="task" placeholder="Adicione sua tarefa :)">
-        <button type="submit" id="add task" onclick="addElement()">Adicionar</button>      
-
-        <ul id="main list">
-            <li id="item">
-                <input type="checkbox" onclick="TaskDone(event)"><span>Escovar os dentes</span> <button onclick="DelElement(event)">X</button>
-            </li>
-        </ul>
+        <div class="add-box">
+            <input class="add-box" type="text" name="task" id="task" placeholder="Adicione sua tarefa :)">
+            <button class="add-box" type="submit" id="add task" onclick="addElement()">Adicionar</button>      
+        </div>
+        <ul id="main list"></ul>
     </div>
 </body>
 
