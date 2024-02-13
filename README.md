@@ -4,7 +4,7 @@ Esse projeto foi desenvolvido com o objetivo de solidificar os meus conhecimento
 
 ## Layout Final
 
-![Calculadora Simples](/imagens/calculator-pic-two.png)
+![Lista de Tarefas](/images/todo-list-pic-one.png)
 
 ## Tecnologias Utilizadas
 Linguagem de programação: JavaScript <br>
